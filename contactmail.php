@@ -1,4 +1,6 @@
 <?php
+// on commence avec session start
+// puis on teste le code
 session_start();
 if(!isset($_SESSION['code']) OR strlen($_SESSION['code']) !=5) exit("Erreur !");
 if($_SESSION['code'] != $_POST['verif']) exit("Erreur les valeurs sont différentes !");

@@ -1,4 +1,5 @@
 <?php
+// session start
 session_start();
 
 $_SESSION['captcha']=mt_rand(1000,9999);
